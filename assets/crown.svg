@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradients -->
+    <linearGradient id="crGoldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="30%" stop-color="#FDE047" />
+      <stop offset="70%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+
+    <linearGradient id="crGoldDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Velvet Red Inner Cushion -->
+    <linearGradient id="crVelvetRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="40%" stop-color="#B91C1C" />
+      <stop offset="100%" stop-color="#581C87" />
+    </linearGradient>
+
+    <!-- Gem Gradient (Clash Royal Sapphire / Ruby) -->
+    <linearGradient id="crRuby" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDA4AF" />
+      <stop offset="40%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+
+    <linearGradient id="crSapphire" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="40%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="crownShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <g filter="url(#crownShadow)">
+    <!-- Red Velvet Cushion Backing -->
+    <path d="M 28 85 C 25 55, 55 35, 80 35 C 105 35, 135 55, 132 85 Z" fill="url(#crVelvetRed)" stroke="#450A0A" stroke-width="2.5" />
+
+    <!-- Crown Peaks / Main Body -->
+    <!-- Back Shading of Body -->
+    <path d="M 20 90 L 15 45 L 48 65 L 80 20 L 112 65 L 145 45 L 140 90 Z" fill="url(#crGoldDark)" stroke="#451A03" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Front Lustrous Body -->
+    <path d="M 22 88 L 18 48 L 48 67 L 80 25 L 112 67 L 142 48 L 138 88 Z" fill="url(#crGoldLight)" stroke="#78350F" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Central Ridge & 3D bevels -->
+    <!-- Center peak facet left -->
+    <polygon points="80,25 48,67 80,88" fill="#FDE047" opacity="0.6" />
+    <!-- Center peak facet right -->
+    <polygon points="80,25 112,67 80,88" fill="#CA8A04" opacity="0.5" />
+    <!-- Left peak facet -->
+    <polygon points="18,48 48,67 32,88" fill="#FDE047" opacity="0.5" />
+    <!-- Right peak facet -->
+    <polygon points="142,48 112,67 128,88" fill="#CA8A04" opacity="0.7" />
+
+    <!-- Peak Jewels / Pearls -->
+    <!-- Left Peak Orb -->
+    <circle cx="17" cy="46" r="7.5" fill="url(#crGoldLight)" stroke="#78350F" stroke-width="2" />
+    <circle cx="15" cy="44" r="2.5" fill="#FFFFFF" opacity="0.8" />
+    
+    <!-- Right Peak Orb -->
+    <circle cx="143" cy="46" r="7.5" fill="url(#crGoldLight)" stroke="#78350F" stroke-width="2" />
+    <circle cx="141" cy="44" r="2.5" fill="#FFFFFF" opacity="0.8" />
+
+    <!-- Center Giant Cross / Orb (Iconic Clash King Crown) -->
+    <circle cx="80" cy="22" r="10" fill="url(#crGoldLight)" stroke="#78350F" stroke-width="2" />
+    <circle cx="80" cy="22" r="6" fill="url(#crRuby)" stroke="#450A0A" stroke-width="1" />
+    <circle cx="78" cy="20" r="2" fill="#FFFFFF" opacity="0.9" />
+
+    <!-- Crown Base Band -->
+    <path d="M 18 86 Q 80 96 142 86 L 144 105 Q 80 118 16 105 Z" fill="url(#crGoldDark)" stroke="#451A03" stroke-width="3" stroke-linejoin="round" />
+    <path d="M 20 88 Q 80 97 140 88 L 142 102 Q 80 114 18 102 Z" fill="url(#crGoldLight)" stroke="#78350F" stroke-width="1" />
+
+    <!-- Band Jewels (Ruby & Sapphires) -->
+    <!-- Left Sapphire -->
+    <ellipse cx="45" cy="98" rx="6" ry="5" fill="url(#crSapphire)" stroke="#082F49" stroke-width="1.5" />
+    <circle cx="43" cy="96" r="1.5" fill="#FFFFFF" opacity="0.8" />
+
+    <!-- Center Big Ruby -->
+    <ellipse cx="80" cy="102" rx="9" ry="7" fill="url(#crRuby)" stroke="#450A0A" stroke-width="1.8" />
+    <circle cx="77" cy="99" r="2" fill="#FFFFFF" opacity="0.9" />
+
+    <!-- Right Sapphire -->
+    <ellipse cx="115" cy="98" rx="6" ry="5" fill="url(#crSapphire)" stroke="#082F49" stroke-width="1.5" />
+    <circle cx="113" cy="96" r="1.5" fill="#FFFFFF" opacity="0.8" />
+
+    <!-- Rivets/Gems on Band Base -->
+    <circle cx="26" cy="95" r="2.5" fill="#FDE047" stroke="#78350F" stroke-width="1" />
+    <circle cx="134" cy="95" r="2.5" fill="#FDE047" stroke="#78350F" stroke-width="1" />
+    <circle cx="62" cy="100" r="2.5" fill="#FDE047" stroke="#78350F" stroke-width="1" />
+    <circle cx="98" cy="100" r="2.5" fill="#FDE047" stroke="#78350F" stroke-width="1" />
+  </g>
+</svg>

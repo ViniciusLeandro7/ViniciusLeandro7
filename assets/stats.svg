@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="stBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a101d" />
+      <stop offset="50%" stop-color="#111d33" />
+      <stop offset="100%" stop-color="#090d17" />
+    </linearGradient>
+
+    <!-- Royale Gold Gradients -->
+    <linearGradient id="stGoldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="30%" stop-color="#FDE047" />
+      <stop offset="70%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+
+    <linearGradient id="stGoldDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Elixir Gradient -->
+    <linearGradient id="stElixir" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#c026d3" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+
+    <!-- Trophy Gold -->
+    <linearGradient id="stTrophy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="stShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <style>
+      .clash-title {
+        font-family: 'Supercell-Magic', 'Impact', 'Arial Black', -apple-system, sans-serif;
+        text-shadow: 2px 2px 0px #000;
+      }
+      .clash-body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .clash-val {
+        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Stone Container Frame -->
+  <rect x="6" y="6" width="838" height="308" rx="20" fill="url(#stBg)" stroke="url(#stGoldDark)" stroke-width="4" filter="url(#stShadow)" />
+  <rect x="14" y="14" width="822" height="292" rx="14" fill="none" stroke="url(#stGoldLight)" stroke-width="1.8" opacity="0.8" />
+
+  <!-- Corner Rivets -->
+  <circle cx="24" cy="24" r="5" fill="url(#stGoldLight)" stroke="#78350F" stroke-width="1" />
+  <circle cx="826" cy="24" r="5" fill="url(#stGoldLight)" stroke="#78350F" stroke-width="1" />
+  <circle cx="24" cy="296" r="5" fill="url(#stGoldLight)" stroke="#78350F" stroke-width="1" />
+  <circle cx="826" cy="296" r="5" fill="url(#stGoldLight)" stroke="#78350F" stroke-width="1" />
+
+  <!-- ============================================== -->
+  <!-- HEADER DO CARD: PERFIL & LIGA                 -->
+  <!-- ============================================== -->
+  <g transform="translate(40, 32)">
+    <!-- Star Level 15 Badge -->
+    <polygon points="20,0 26,13 40,15 29,25 32,38 20,31 8,38 11,25 0,15 14,13" fill="url(#stGoldLight)" stroke="#78350F" stroke-width="1.5" />
+    <text x="20" y="25" class="clash-title" font-size="14" font-weight="900" fill="#000" text-anchor="middle">15</text>
+    
+    <!-- Title and Arena Info -->
+    <text x="55" y="20" class="clash-title" font-size="20" font-weight="900" fill="url(#stGoldLight)">ESTATÍSTICAS DA ARENA ROYALE</text>
+    <text x="55" y="38" class="clash-body" font-size="13" font-weight="600" fill="#94a3b8">Temporada Atual • Liga: Maior Campeão (Ultimate Champion)</text>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- 4 STAT BOXES (CARDS GRANDES E RESPONSIVOS)     -->
+  <!-- ============================================== -->
+
+  <!-- BOX 1: TROFÉUS (9000+) -->
+  <g transform="translate(40, 90)" filter="url(#stShadow)">
+    <rect x="0" y="0" width="180" height="95" rx="12" fill="url(#boxGrad)" stroke="url(#stGoldLight)" stroke-width="1.8" />
+    <!-- Trophy Icon -->
+    <path d="M 22 18 L 38 18 L 38 30 C 38 35, 34 38, 30 38 C 26 38, 22 35, 22 30 Z" fill="url(#stTrophy)" stroke="#78350F" stroke-width="1.5" />
+    <path d="M 18 20 L 22 20 L 22 26 L 18 26 Z M 38 20 L 42 20 L 42 26 L 38 26 Z" fill="url(#stTrophy)" />
+    <rect x="28" y="38" width="4" height="6" fill="url(#stTrophy)" />
+    <rect x="24" y="44" width="12" height="4" fill="url(#stTrophy)" />
+    <!-- Text -->
+    <text x="50" y="32" class="clash-body" font-size="11" font-weight="bold" fill="#fde047">TROFÉUS</text>
+    <text x="90" y="66" class="clash-title" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">9.000</text>
+    <text x="90" y="83" class="clash-val" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">MAX TROPHY: 9000</text>
+  </g>
+
+  <!-- BOX 2: VITÓRIAS DE 3 COROAS -->
+  <g transform="translate(235, 90)" filter="url(#stShadow)">
+    <rect x="0" y="0" width="180" height="95" rx="12" fill="url(#boxGrad)" stroke="#ef4444" stroke-width="1.8" />
+    <!-- 3 Mini Crowns Icon -->
+    <text x="30" y="33" font-size="16">👑</text>
+    <text x="52" y="32" class="clash-body" font-size="11" font-weight="bold" fill="#fca5a5">3 COROAS</text>
+    <text x="90" y="66" class="clash-title" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">1.450+</text>
+    <text x="90" y="83" class="clash-val" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">VITÓRIAS REAIS</text>
+  </g>
+
+  <!-- BOX 3: TAXA DE VITÓRIA (WIN RATE) -->
+  <g transform="translate(430, 90)" filter="url(#stShadow)">
+    <rect x="0" y="0" width="180" height="95" rx="12" fill="url(#boxGrad)" stroke="#22c55e" stroke-width="1.8" />
+    <!-- Sword Icon -->
+    <text x="30" y="33" font-size="16">⚔️</text>
+    <text x="52" y="32" class="clash-body" font-size="11" font-weight="bold" fill="#86efac">WIN RATE</text>
+    <text x="90" y="66" class="clash-title" font-size="26" font-weight="900" fill="#4ade80" text-anchor="middle">82.4%</text>
+    <text x="90" y="83" class="clash-val" font-size="10" font-weight="bold" fill="#22c55e" text-anchor="middle">COMMITS PRECISOS</text>
+  </g>
+
+  <!-- BOX 4: PRODUÇÃO DE ELIXIR -->
+  <g transform="translate(625, 90)" filter="url(#stShadow)">
+    <rect x="0" y="0" width="185" height="95" rx="12" fill="url(#boxGrad)" stroke="url(#stElixir)" stroke-width="1.8" />
+    <!-- Elixir drop icon -->
+    <text x="28" y="33" font-size="16">💧</text>
+    <text x="50" y="32" class="clash-body" font-size="11" font-weight="bold" fill="#f472b6">PRODUÇÃO</text>
+    <text x="92" y="66" class="clash-title" font-size="24" font-weight="900" fill="#f472b6" text-anchor="middle">100% ELIXIR</text>
+    <text x="92" y="83" class="clash-val" font-size="10" font-weight="bold" fill="#c084fc" text-anchor="middle">FULL TIME CODER</text>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- BARRA INFERIOR: CLÃ E BADGES DE BATALHA       -->
+  <!-- ============================================== -->
+  <g transform="translate(40, 205)">
+    <rect x="0" y="0" width="770" height="85" rx="14" fill="#0b1324" stroke="#1e293b" stroke-width="1.5" />
+    
+    <!-- Clan Badge -->
+    <g transform="translate(25, 18)">
+      <polygon points="15,0 30,8 30,35 15,45 0,35 0,8" fill="#1e3a8a" stroke="url(#stGoldLight)" stroke-width="2" />
+      <polygon points="15,10 23,26 7,26" fill="url(#stGoldLight)" />
+      <text x="45" y="22" class="clash-title" font-size="15" fill="#fde047">CLÃ: CODE ROYALE</text>
+      <text x="45" y="38" class="clash-body" font-size="12" fill="#94a3b8">Cargo: Líder • Tag: #VINICODE • Região: Brasil</text>
+    </g>
+
+    <!-- Right Side Badges -->
+    <g transform="translate(510, 22)">
+      <rect x="0" y="0" width="115" height="42" rx="8" fill="#1e293b" stroke="url(#stGoldLight)" stroke-width="1.2" />
+      <text x="57" y="18" class="clash-body" font-size="10" font-weight="bold" fill="#fde047" text-anchor="middle">BAÚS ABERTOS</text>
+      <text x="57" y="34" class="clash-val" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">500+ REPOS</text>
+    </g>
+
+    <g transform="translate(640, 22)">
+      <rect x="0" y="0" width="110" height="42" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="55" y="18" class="clash-body" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">DESAFIOS</text>
+      <text x="55" y="34" class="clash-val" font-size="13" font-weight="900" fill="#ffffff" text-anchor="middle">12 VITÓRIAS</text>
+    </g>
+  </g>
+</svg>
